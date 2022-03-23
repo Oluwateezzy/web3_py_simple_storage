@@ -20,7 +20,7 @@ contract SimpleStorage {
 
     People public person = People({favouriteNumber : 3, name: "oluwatobiloba"});
 
-    function store(uint256 _favouriteNumber) public  returns(uint256) {
+     function store(uint256 _favouriteNumber) public returns(uint256) {
         favouriteNumber = _favouriteNumber;
         return _favouriteNumber;
     }
