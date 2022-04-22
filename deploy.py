@@ -65,7 +65,6 @@ store_transaction = simple_Storage.functions.store(15).buildTransaction({
         "from": my_Address,
         "nonce": nonce + 1,
 })
-
 signed_store_txn = w3.eth.account.sign_transaction(
     store_transaction, private_key=private_key
 )
